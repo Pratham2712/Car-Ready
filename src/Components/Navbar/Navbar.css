@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 6rem;
+    background: var(--color-bg);
+    position: fixed;
+    width: 100%;
+}
+
+.links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 2rem;
+    color: #fff;
+    font-family: 'Cabin Sketch', cursive;
+
+}
+
+
+
+.links_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.links_container p,
+.sign p,
+.menu_container p {
+    color: #fff;
+    
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.sign button,
+.menu_container button {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #323BED;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu {
+    margin-left: 1rem;
+
+    display: none;
+    position: relative;
+}
+
+.menu svg {
+    cursor: pointer;
+}
+
+.menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    
+    text-align: end;
+    background: var(--color-bg);
+    padding: 2rem;
+    position: absolute;
+    right: -33px;
+    top: 40px;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+}
+
+.menu_container p {
+    margin: 1rem 0;
+}
+
+.menu_sign {
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .links_container {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .navbar {
+        padding: 2rem;
+    }
+
+    .sign {
+        display: none;
+    }
+
+    .menu_container {
+        top: 20px;
+    }
+
+    .menu_sign {
+        display: block;
+    }
+
+    .logo h1 {
+        
+    font-size: 1.5rem;
+}
+}
