@@ -10,7 +10,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="links">
         <div className="logo">
-          <h1><span>Car</span> <span >Ready</span></h1>
+          <h1><span>CaRental</span></h1>
         </div>
         <div className="links_container">
            <p><a href="#share">Share your car</a></p>

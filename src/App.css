@@ -6,6 +6,20 @@
   scroll-behavior: smooth;
 }
 
+ html {
+        
+        scroll-behavior: smooth;
+        overflow-x: hidden; 
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+}
+
 a {
   color: unset;
   text-decoration: none;
@@ -36,4 +50,36 @@ a {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+}
+
+.section__padding {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .section__padding {
+   padding-left: 6rem;
+  padding-right: 6rem;
+    
+  }
+  
+ 
+}
+@media screen and (max-width: 700px) {
+  .section__padding {
+      padding-left: 4rem;
+  padding-right: 4rem;
+    }
+  
+ 
+}
+
+@media screen and (max-width: 550px) {
+  .section__padding {
+   padding-left: 2rem;
+  padding-right: 2rem;
+  }
+
+  
 }

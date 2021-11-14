@@ -4,7 +4,8 @@
 :root {
   --font-family: 'Poppins', sans-serif;
 
-  --gradient-text: linear-gradient(89.97deg, hotpink 1.84%, #323BED 102.67%);
+  --gradient-text: linear-gradient(89.97deg, #323BED 1.84%, #FF4820 102.67%);
+  --gradient-oppotext: linear-gradient(89.97deg, #FF4820 1.84%, #323BED 102.67%);
   --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
   
   --color-bg: #2a2b2c;
@@ -12,6 +13,9 @@
   --color-blog: #042c54;
   --color-text: #81AFDD;
   --color-subtext: #FF8A71;
+  --color-orange: #FF4820;
 }
+
+
 
 
