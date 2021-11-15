@@ -1,0 +1,70 @@
+.ad-section {
+    background: #F8FAFC;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-family: var(--font-family);
+    
+}
+
+.ad-section .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ad-section .content .parts{
+    width: 33.33%;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.ad-section .parts h2 {
+     font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    color: #171717;
+    margin-bottom: 1.2rem;
+}
+
+.ad-section .parts p {
+    font-size: 1.1rem;
+  
+    color: #4a4a4a;
+}
+
+.ad-section .button button {
+    padding: 0.7rem 1.2rem;
+    margin-top: 2.5rem;
+    color: #fff;
+    background: #323BED;
+    margin-right: 1.5rem;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.ad-section .button span {
+    color: #323BED;
+}
+
+@media screen and (max-width: 1050px) {
+    .ad-section .content {
+        flex-direction: column;
+    }
+    .ad-section .content .parts {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .ad-section .parts h2 {
+        font-size: 1.2rem;
+    }
+    .ad-section .parts p {
+        font-size: 0.8rem;
+    }
+}
