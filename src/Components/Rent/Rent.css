@@ -61,4 +61,8 @@
     .rent-section .container .content p {
         font-size: 1rem;
     }
+
+    .rent-section .container .image img {
+        width: 330px;
+    }
 }
