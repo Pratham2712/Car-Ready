@@ -38,7 +38,7 @@
 }
 
 .place-section .container  .panel {
-            background-image: cover;
+            background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             height: 70vh;
@@ -100,7 +100,7 @@
 @media screen and (max-width: 1050px) {
     .place-section .container  .panel {
         height: 50vh;
-        flex: 2;
+        flex: 3;
         margin-left: 0.3rem;
     margin-right: 0.3rem;
     }
@@ -112,7 +112,7 @@
 @media screen and (max-width: 550px) {
     .place-section .container  .panel {
         height: 35vh;
-        flex: 2;
+        flex: 3;
         margin-left: 0.1rem;
     margin-right: 0.1rem;
     }
