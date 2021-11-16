@@ -49,6 +49,7 @@
 
 .ad-section .button span {
     color: #323BED;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 1050px) {

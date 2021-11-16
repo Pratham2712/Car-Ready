@@ -1,0 +1,64 @@
+.rent-section {
+    padding-bottom: 3rem;
+    font-family: var(--font-family);
+}
+
+.rent-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rent-section .container .image img {
+    
+    width: 500px;
+    height: 100%;
+}
+
+.rent-section .container .content h2 {
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    color: #171717;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+.rent-section .container .content p {
+    font-size: 1.25rem;
+    color: #4a4a4a;
+}
+
+.rent-section .button button {
+     padding: 0.7rem 1.2rem;
+    color: #fff;
+    background: #323BED;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 1050px) {
+    .rent-section {
+        padding-top: 3rem;
+        padding-bottom: 0rem;
+    }
+    .rent-section .container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .rent-section .container .content h2 {
+        font-size: 1.4rem;
+    }
+    .rent-section .container .content p {
+        font-size: 1rem;
+    }
+}

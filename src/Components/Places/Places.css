@@ -1,0 +1,132 @@
+.place-section {
+     padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-family: var(--font-family);
+     /* ff 3.6+ */
+    background:-moz-radial-gradient(ellipse at 100% 3%, rgba(50, 59, 237, 1) 9%, rgba(0, 0, 0, 1) 62%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(ellipse at 100% 3%, rgba(50, 59, 237, 1) 9%, rgba(0, 0, 0, 1) 62%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(ellipse at 100% 3%, rgba(50, 59, 237, 1) 9%, rgba(0, 0, 0, 1) 62%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(ellipse at 100% 3%, rgba(50, 59, 237, 1) 9%, rgba(0, 0, 0, 1) 62%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(ellipse at 100% 3%, rgba(50, 59, 237, 1) 9%, rgba(0, 0, 0, 1) 62%);
+    width: 100%;
+}
+
+.place-section h2 {
+     font-size: 1.8rem;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.place-section p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.place-section .container {
+     display: flex;
+}
+
+.place-section .container  .panel {
+            background-image: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 70vh;
+            border-radius: 5px;
+            cursor: pointer;
+            flex: 3;
+          margin-left: 0.6rem;
+    margin-right: 0.6rem;
+            position: relative;
+            transition: flex 0.7s ease-in-out;
+        }
+
+.place-section .container .panel:nth-child(1) {
+    margin-left: 0rem;
+}
+
+.place-section .container .panel::before{
+     content: "";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      background-color: rgba(0,0,0,0.3);
+
+}
+
+.place-section .container .panel h2 {
+            position: absolute;
+            bottom:  20px;
+            left: 20px;
+  z-index: 1;
+  color: #fff;
+   opacity: 0;
+        }
+ .place-section .container .panel.active {
+            flex: 20;
+        }
+ .place-section .container .panel.active h2 {
+            opacity: 1;
+            transition: opacity 0.3s delay 0.4;
+}
+
+.place-section .button button {
+    padding: 0.7rem 1.2rem;
+    margin-top: 2.5rem;
+    color: #fff;
+    background: #323BED;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1050px) {
+    .place-section .container  .panel {
+        height: 50vh;
+        flex: 2;
+        margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    }
+
+    .place-section .container .panel h2 {
+        bottom: 15px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .place-section .container  .panel {
+        height: 35vh;
+        flex: 2;
+        margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    }
+
+    .place-section h2 {
+        font-size: 1.4rem;
+    }    
+
+    .place-section  p {
+        font-size: 1rem;
+    }
+
+    .place-section .container .panel h2 {
+        bottom: -18px;
+        font-size: 1.2rem;
+    }
+}

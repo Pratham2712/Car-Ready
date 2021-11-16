@@ -4,6 +4,8 @@ import Header from "./Components/Header/Header";
 import Stats from "./Components/Stats/Stats";
 import Vehicles from "./Components/Vehicles/Vehicles";
 import Advantage from "./Components/Advantage/Advantage";
+import Places from "./Components/Places/Places";
+import Rent from "./Components/Rent/Rent";
 //css
 import './App.css'
 function App() {
@@ -13,7 +15,9 @@ function App() {
       <Header />
       <Stats />
       <Vehicles />
-      <Advantage/>
+      <Advantage />
+      <Places />
+      <Rent/>
     </div>
   );
 }
