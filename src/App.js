@@ -6,6 +6,7 @@ import Vehicles from "./Components/Vehicles/Vehicles";
 import Advantage from "./Components/Advantage/Advantage";
 import Places from "./Components/Places/Places";
 import Rent from "./Components/Rent/Rent";
+import Footer from "./Components/Footer/Footer";
 //css
 import './App.css'
 function App() {
@@ -17,7 +18,8 @@ function App() {
       <Vehicles />
       <Advantage />
       <Places />
-      <Rent/>
+      <Rent />
+      <Footer/>
     </div>
   );
 }
